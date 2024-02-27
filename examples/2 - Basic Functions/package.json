@@ -1,0 +1,16 @@
+{
+  "name": "2---basic-functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "electron": "nodemon --watch main.js --exec yarn start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^29.0.0"
+  }
+}

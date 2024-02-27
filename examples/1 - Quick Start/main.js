@@ -5,10 +5,15 @@ let mainWindow;
 function createMainWindow () {
   mainWindow = new BrowserWindow({
     width: 800, 
-    height: 600
+    height: 600,
+    show:false
 });
-//   mainWindow.loadFile('index.html');
-    mainWindow.loadURL('https://ciallo.cc');
+
+  mainWindow.loadFile('index.html');
+    // mainWindow.loadURL('https://ciallo.cc');
+  mainWindow.once('ready-to-show', () => {
+    mainWindow.show();
+  } );
   mainWindow.on('closed', function () {
     mainWindow = null;
   });
