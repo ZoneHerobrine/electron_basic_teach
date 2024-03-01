@@ -9,3 +9,4 @@ document.getElementById('notifi').addEventListener('click', function() {
         console.log('Notification showed');
     };
 });
+
